@@ -5,6 +5,7 @@ import About from './Components/About/About';
 import Main from './Layouts/Main';
 import Shop from './Components/Shop/Shop'
 import Orders from './Components/Orders/Orders';
+import Inventory from './Components/Inventory/Inventory';
 
 function App() {
   const router = createBrowserRouter([
@@ -19,13 +20,18 @@ function App() {
         {
           path: '/orders',
           element: <Orders></Orders>
-        }
+        },
+        {
+          path: '/inventory',
+          element: <Inventory></Inventory>
+        },
+        {
+          path: 'about', 
+          element: <About></About>
+        },
       ]
     },
-    {
-      path: 'about', 
-      element: <About></About>
-    },
+    
   ])
   return (
     <div>
