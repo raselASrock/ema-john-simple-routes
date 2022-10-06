@@ -10,9 +10,10 @@
 .review-item{
     display: flex;
     border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
     width: 571px;
     height: 147px;
-    margin: 0 auto;
+    margin: 21px auto;
     padding: 8px;
 }
 .review-details p{
@@ -28,4 +29,12 @@
     border: 0;
     background-color: rgba(235, 87, 87, 0.3);
     border-radius: 50%;
+}
+.btn-delet:hover{
+    background-color: rgba(235, 87, 87, 0.5);
+    cursor: pointer;
+}
+.delet-container{
+    display: flex;
+    align-items: center;
 }

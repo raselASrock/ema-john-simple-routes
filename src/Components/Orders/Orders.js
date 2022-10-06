@@ -6,7 +6,10 @@ import ReviewItem from '../ReviewItem/ReviewItem';
 
 const Orders = () => {
     const {products, initialCart} = useLoaderData();
-    const [cart, setCart] = useState(initialCart)
+    const [cart, setCart] = useState(initialCart);
+    const handleRemoveItem = (id) => {
+        console.log(id);
+    }
     return (
         <div className='shop-container'>
             <div className='orders-container'>
@@ -14,6 +17,7 @@ const Orders = () => {
                 cart.map( product => <ReviewItem
                 key={product.id}
                 product = {product}
+                handleRemoveItem = {handleRemoveItem}
                 ></ReviewItem>)
             }
             </div>
