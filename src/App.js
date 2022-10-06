@@ -21,9 +21,7 @@ function App() {
         },
         {
           path: '/orders',
-          loader: () => {
-            ProductsAndCartLoader()
-          },
+          loader: ProductsAndCartLoader,
           element: <Orders></Orders>
         },
         {
